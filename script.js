@@ -1,8 +1,8 @@
 // Set the date we're counting down to
-var datesDict = {
-"Deutsch": new Date("Apr 29, 2025 08:00:00").getTime(),
-"Russisch": new Date("Jun 3, 2025 08:00:00").getTime()
-};
+const datesMap = new Map([
+["Deutsch", new Date("Apr 29, 2025 08:00:00").getTime()],
+["Russisch": new Date("Jun 3, 2025 08:00:00").getTime()]
+]);
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -11,7 +11,7 @@ var x = setInterval(function() {
   var now = new Date().getTime();
 
   // select countdown date depending on subject
-  var countDownDate = datesDict.(document.getElementById("subject").value);
+  var countDownDate = datesMap.get(document.getElementById("subject").value);
   console.println(countDownDate);
     
   // Find the distance between now and the count down date
