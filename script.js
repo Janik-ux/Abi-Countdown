@@ -12,7 +12,6 @@ var x = setInterval(function() {
 
   // select countdown date depending on subject
   var countDownDate = datesMap.get(document.getElementById("subject").value);
-  console.println(countDownDate);
     
   // Find the distance between now and the count down date
   var distance = countDownDate - now;
