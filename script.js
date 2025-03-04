@@ -1,7 +1,11 @@
 // Set the date we're counting down to
 const datesMap = new Map([
 ["Deutsch", new Date("Apr 29, 2025 08:00:00").getTime()],
-["Russisch", new Date("Jun 3, 2025 08:00:00").getTime()]
+["Geschichte", new Date("May 5, 2025 08:00:00").getTime()],
+["Englisch", new Date("May 7, 2025 08:00:00").getTime()],
+["Mathematik", new Date("May 9, 2025 08:00:00").getTime()],
+["Russisch", new Date("Jun 3, 2025 08:00:00").getTime()],
+["Biologie", new Date("Jun 10, 2025 08:00:00").getTime()]
 ]);
 
 // Update the count down every 1 second
